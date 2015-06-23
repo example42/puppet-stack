@@ -8,7 +8,7 @@ class stack_logstash::kibana (
   ) {
 
   $default_options = {
-    'elasticsearch'          => 'http://"+window.location.hostname+":9200',
+    'elasticsearch'          => '"http://"+window.location.hostname+":9200"',
     'default_route'          => '/dashboard/file/logstash.json',
     'kibana_index'           => 'kibana-int',
     'panel_names'            => "[ 'histogram','map','goal','table','filtering','timepicker','next','hits','column','trends','bettermap','query','terms','stats','sparklines' ]",
